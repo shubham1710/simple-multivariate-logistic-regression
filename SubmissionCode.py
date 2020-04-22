@@ -8,7 +8,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split 
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
-get_ipython().run_line_magic('matplotlib', 'inline')
 import warnings
 warnings.filterwarnings('ignore')
 a=np.genfromtxt('train_X.csv',delimiter=',')
