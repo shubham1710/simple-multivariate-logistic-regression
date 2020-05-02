@@ -11,7 +11,7 @@ logreg = LogisticRegression()
 x_train,x_test,y_train,y_test=train_test_split(a,b,test_size=0.3)
 logreg.fit(x_train,y_train)
 y_pred=logreg.predict(x_test)
-co=np.shape(a)[0]
+co=np.shape(x_test)[0]
 y_pred.resize(co,1)
 np.savetxt("predicted_test_Y.csv", y_pred, delimiter=",")
 
